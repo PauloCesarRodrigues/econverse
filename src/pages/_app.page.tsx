@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import '@/pages/home/components/relatedProducts/components/carousel/plus.sass'
+import '@/styles/carousel.sass'
 import { Header } from '@/components/header/index'
 import { Footer } from '@/components/footer/index'
 import { QueryClientProvider } from '@tanstack/react-query'
