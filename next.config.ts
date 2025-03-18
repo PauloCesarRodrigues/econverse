@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       'vercel.com',
       '*.vercel.app',
       '*-paulocesarrodrigues-projects.vercel.app',
+      'econverse-git-main-paulocesarrodrigues-projects.vercel.app',
+      'econverse-caxldy142-paulocesarrodrigues-projects.vercel.app',
     ],
   },
   webpack(config, { isServer }) {
