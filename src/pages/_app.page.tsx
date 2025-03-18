@@ -4,6 +4,7 @@ import { Header } from '@/components/header/index'
 import { Footer } from '@/components/footer/index'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClient } from '@/lib/react-query'
+import '@/styles/globals.sass'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
