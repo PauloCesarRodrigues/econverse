@@ -7,6 +7,10 @@ import { Partners } from './components/partners'
 
 import logoImg from '@/assets/logo.png'
 
+import '@/styles/carousel.sass'
+import '@/styles/globals.sass'
+import '@/styles/_variables.sass'
+
 export default function Home() {
   return (
     <>

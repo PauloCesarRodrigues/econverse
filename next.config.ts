@@ -3,7 +3,7 @@ import path from 'path'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  pageExtensions: ['page.tsx', 'api.ts'],
+  pageExtensions: ['api.ts'],
   images: {
     domains: [
       'app.econverse.com.br',
