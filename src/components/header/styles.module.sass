@@ -1,0 +1,171 @@
+@import '../../styles/variables'
+
+.aboveSection
+  height: 2rem
+  max-width: 1280px
+  width: 100%
+
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-direction: row
+
+  margin: 0 auto
+
+  box-shadow: 0px 1px 0px $off-white
+
+  @media (max-width: 550px)
+    > div:nth-child(n+2)
+      display: none
+
+.aboveSectionItem
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  gap: 0.625rem
+
+  span
+    font-family: $font-poppins
+    font-size: 0.75rem
+    font-weight: 500
+
+    strong
+      font-weight: 600
+      color: $blue
+
+  
+.header 
+  height: 4.5rem
+  width: 100%
+  max-width: 1280px
+
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  box-shadow: 0px 1px 0px $off-white
+  margin: 0 auto
+
+  a
+    cursor: pointer
+
+.inputContainer
+
+  display: flex
+  width: 39.375rem
+  align-items: center
+  
+  margin: 0 1rem 0 1rem
+
+  input
+    height: 3rem
+    max-width: 39.375rem
+    width: 100%
+
+    border: none
+    outline: none
+
+    background-color: $off-white
+    border-radius: 10px
+
+    padding-left: 1rem
+    padding-right: 1.75rem
+
+    color: $gray-300
+    font-size: 0.875rem
+    font-weight: 500
+
+    &::placeholder
+      color: $gray-300
+      font-size: 0.875rem
+      font-weight: 500
+
+  .lupa
+    z-index: 2
+    margin-left: -3rem
+
+
+  @media (max-width: 450px)
+    display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headerIcons
+  display: flex
+  flex-direction: row
+  gap: 1.875rem
+
+  a
+    cursor: pointer
+
+    @media (max-width: 550px)
+      display: none
+  
+
+  button
+    display: none
+    background-color: transparent
+    @media (max-width: 550px)
+      display: flex
+  
+
+.navbar
+  height: 2.5rem
+  width: 100%
+  max-width: 1280px
+  margin: 0 auto
+  display: flex
+  align-items: center
+
+  ul
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    list-style-type: none
+    align-items: center
+
+  li
+    font-family: $font-poppins
+    font-size: 0.75rem
+    font-weight: 600
+    color: $gray-300
+    a
+      cursor: pointer
+      display: flex
+      text-align: center
+      align-items: center
+      gap: 0.75rem
+
+      strong
+        color: #3442B5
+
+      div
+        margin-top: -5px
+        align-items: center
+        align-content: center
+        justify-content: center
+        align-items: flex-end
+
+        span
+          position: relative
+          top: 5px
+
+    &:hover
+      a
+        color: $blue
+        font-weight: 650
+
+  @media (max-width: 800px)
+    display: none

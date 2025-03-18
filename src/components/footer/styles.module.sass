@@ -1,0 +1,229 @@
+@import '../../styles/variables'
+
+
+.footer
+  width: 100vw
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin: 0 auto
+  background: $off-white
+
+.footerContainer
+  width: 100vw
+  height: 10.125rem
+  background: $purple
+  color: $white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+  margin: 0 auto
+
+  @media (max-width: 1280px)
+    height: 15rem
+
+  @media (max-width: 650px)
+    height: 26rem
+
+.footerContent
+  max-width: 1280px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+  @media (max-width: 1280px)
+    display: flex
+    flex-direction: column
+    text-align: center
+    gap: 2rem
+
+  form
+    display: flex
+    flex-direction: column
+
+    .formContainer
+      display: flex
+      flex-direction: column
+
+.formMainInputs
+  display: flex
+  flex-direction: row
+  gap: 0.5rem
+
+  @media (max-width: 650px)
+    display: flex
+    flex-direction: column
+    text-align: center
+    gap: 2rem
+    align-items: center
+
+  input
+    outline: none
+    border: none
+    width: 14.5rem
+    height: 2.625rem
+    background: $white
+    border-radius: 8px
+    padding-left: 1rem
+
+    &::placeholder
+      font-family: $font-poppins
+      font-size: 0.875rem
+      color: $gray-500
+      font-weight: 400
+
+  button
+    background: $yellow
+    width: 9.5rem
+    height: 2.625rem
+    border-radius: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: $font-poppins
+    font-size: 0.875rem
+    color: $purple
+    font-weight: 600
+    border: none
+    cursor: pointer
+    margin-right: 1rem
+
+    &:hover
+      background-color: #FFF600
+
+    @media (max-width: 650px)
+      margin-bottom: 1rem
+
+.checkboxContainer
+  display: flex
+  align-items: center
+  gap: 0.5rem
+  margin-top: 0.5rem
+
+  input[type="checkbox"]
+    width: 1rem
+    height: 1rem
+    cursor: pointer
+
+  label
+    font-family: $font-poppins
+    font-size: 0.875rem
+    font-weight: 400
+    color: $white
+
+.footerInfo
+  h4
+    font-family: $font-outfit
+    font-size: 2rem
+    font-weight: 600
+
+  p
+    font-family: $font-poppins
+    font-size: 0.875rem
+    font-weight: 200
+
+.footerNavContainer
+  width: 100%
+  max-width: 1280px
+  margin-top: 4rem
+  margin-bottom: 4rem
+  display: flex
+  flex-direction: row
+
+  @media (max-width: 1280px)
+    display: flex
+    align-items: center
+    flex-direction: column-reverse
+
+    span
+      display: none
+
+.NavList
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  width: 100%
+  margin-left: -6rem
+
+  li
+    text-align: left
+    list-style-type: none
+    font-family: $font-workSans
+    font-size: 0.875rem
+    color: $gray-300
+    font-weight: 400
+    margin-bottom: 1rem
+
+    a
+      text-decoration: none
+      color: $gray-300
+
+    strong
+      text-align: left
+      font-size: 1rem
+      font-weight: 700
+      color: $gray-500
+      margin-bottom: 1.25rem
+
+  @media (max-width: 1280px)
+    ul
+      margin-bottom: 3rem
+  
+
+
+.footerNav
+  justify-content: left
+  display: flex
+  flex-direction: column
+  gap: 1rem
+  margin-left: 2rem
+
+  p
+    font-family: $font-poppins
+    font-weight: 300
+    font-size: 0.875rem
+    color: $gray-500
+    flex-wrap: nowrap
+
+  nav
+    margin-top: 1rem
+    display: flex
+    flex-direction: row
+    gap: 24px
+
+  @media (max-width: 1280px)
+    text-align: center
+    align-items: center
+
+    nav
+      justify-content: space-around
+  
+
+.separator
+  width: 1px
+  height: 12.375rem
+  background-color: $gray-300
+  margin: 0 6rem 0 6rem 
+
+.finalFooter
+  width: 100vw
+  background: $white
+  height: 3rem
+  
+  div
+    max-width: 1280px
+
+    display: flex
+    justify-content: center
+    margin: 0 auto
+
+    p
+      font-family: $font-poppins
+      font-size: 0.813rem
+      font-weight: 300
+      color:$gray-300
+      margin-top: 1rem

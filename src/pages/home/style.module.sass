@@ -1,0 +1,125 @@
+@import '../../styles/_variables'
+  
+$mobile: 700px
+
+.heroSection
+  width: 100vw
+  overflow-x: hidden
+  
+
+.heroSectionBanner
+  width: 100vw
+  height: 24.375rem
+  position: absolute
+  z-index: -1
+  object-fit: cover
+  overflow-x: hidden
+
+  @media (max-width: 842px)
+    height: 30rem
+
+.heroSectionContainer
+  width: 1280px
+
+  display: flex
+  align-items: left
+  flex-direction: column
+  justify-content: space-evenly
+
+  position: relative
+  margin-left: calc(25vw )
+
+  text-align: left
+
+
+
+  div
+    margin-top: 5.5rem
+
+    h2
+      box-sizing: border-box
+      font-family: $font-poppins
+      font-size: 3rem
+      color: $white
+      font-weight: 600
+      line-height: 1
+      max-width: calc(100vw - 20%)
+
+
+  p
+    font-family: $font-poppins
+    font-size: 2rem
+    font-weight: 500
+    color: $white
+    margin-top: 1.5rem
+    max-width: 400px
+
+
+    strong
+      font-weight: 700
+      color: $yellow
+
+
+  a
+    display: flex
+    text-align: center
+    justify-content: center
+
+    border-radius: 5px
+    background-color: $yellow
+
+    max-width: 12.875rem
+    padding: 0.813rem 3.406rem
+
+    margin-top: 1rem
+
+    font-family: $font-poppins
+    font-weight: 600
+    font-size: 1rem
+    color: $purple
+
+    cursor: pointer
+    margin-top: 3.125rem
+  
+    &:hover
+      background-color: #FFF600
+      
+
+.navBrands
+  max-width: 1280px
+  width: 100%
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-direction: column
+  margin: 0 auto
+
+  h4
+    font-family: $font-poppins
+    font-size: 1.875rem
+    color: $blue
+    font-weight: 700
+    margin-top: 5.625rem
+
+  div
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    gap: 2.625rem
+    cursor: pointer
+
+    div
+      margin-top: 2rem
+      border-radius: 999999px
+      height: 13rem
+      width: 13rem
+      box-shadow: 0px 0px 15px rgb(63, 63, 64, 0.20)
+
+  @media (max-width: 1280px)
+    > div > div:nth-child(n+4)
+      display: none
+  
+    @media (max-width: 500px)
+    > div > div:nth-child(n+3)
+      display: none

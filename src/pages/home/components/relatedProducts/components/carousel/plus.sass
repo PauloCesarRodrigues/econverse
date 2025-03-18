@@ -1,0 +1,72 @@
+@import '../../../../../../styles/_variables'
+
+.carouselWrapper 
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 80vw
+  margin: 0 auto
+  position: relative
+
+.swiper-button-prev,
+.swiper-button-next 
+  background-color: $white
+  border-radius: 50% 
+  width: 40px
+  height: 40px
+  min-width: 40px 
+  min-height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  position: absolute
+  z-index: 10
+  box-shadow: 1px 1px 5px rgba(53, 53, 54, 0.25)
+  flex-shrink: 0
+  aspect-ratio: 1 / 1
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 10
+
+.swiper-button-prev 
+  position: fixed
+  left: 200px
+  top: 50px
+  z-index: 9999
+
+.swiper-button-prev 
+  left: 60px
+
+.swiper-button-next 
+  right: 60px
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover 
+  background-color: $off-white
+  color: $white
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus 
+  outline: none
+  box-shadow: 1px 1px 5px rgba(30, 46, 62, 0.25)
+
+.swiper-button-prev::after,
+.swiper-button-next::after
+  display: none
+
+
+.swiper-button-prev
+  background-image: url('../../../../../../assets/home/carousel/leftArrow.svg')
+  background-size: 10px
+  background-repeat: no-repeat
+  background-position: center
+  
+
+.swiper-button-next
+  background-image: url('../../../../../../assets/home/carousel/rightArrow.svg')
+  background-size: 10px
+  background-repeat: no-repeat
+  background-position: center
+

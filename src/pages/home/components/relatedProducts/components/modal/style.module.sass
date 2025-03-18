@@ -1,0 +1,118 @@
+
+@import '../../../../../../styles/_variables'
+  
+
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1
+
+.modalContainer
+  position: relative
+  background: $white
+  width: 48rem
+  height: 18.75rem
+  border-radius: 6px
+
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.modalContainerPhoto
+  margin-left: 3.5rem
+
+.modalContainerContent
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 70%
+  margin-left: 5.4rem
+
+  div
+    text-align: left
+    letter-spacing: 5px
+
+    h2
+      font-size: 1.25rem
+      font-family: $font-poppins
+      font-weight: 400
+      color: $gray-500
+
+    p 
+      font-size: 1.25rem
+      font-family: $font-poppins
+      font-weight: 600
+      color: $gray-500
+ 
+
+  p
+    font-size: 0.625rem
+    font-weight: 500
+    color: $gray-300
+    font-family: $font-workSans
+    margin-right: 2rem
+
+  a
+    font-size: 0.688rem
+    font-weight: 600
+    color: $blue
+    font-family: $font-workSans
+
+.modalCheckout
+  display: flex
+  flex-direction: row
+  gap: 0.75rem
+
+  div
+    width: 6.875rem
+    height: 2.25rem
+    border: 1px solid $gray-300
+    border-radius: 4px
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    padding: 1rem 0
+
+
+
+    span
+      font-family: $font-poppins
+      font-size: 1rem
+      letter-spacing: 0
+      color: $purple
+      font-weight: 500
+
+
+    button 
+      background: none
+
+  button
+    width: 11.75rem
+    height: 2.25rem
+    border-radius: 6px
+    background: $yellow
+    align-items: center
+    justify-content: center
+    color: $purple
+    font-family: $font-poppins
+    font-size: 0.875rem
+    font-weight: 700
+    border: none
+    outline: none
+
+.buyButton
+  &:hover
+    background: #FFF600
+
+.closeModalButton
+  position: absolute
+  right: 30px
+  top: 20px
+  cursor: pointer

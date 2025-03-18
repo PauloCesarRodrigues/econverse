@@ -1,0 +1,93 @@
+@import '../../../../styles/_variables'
+
+.partnerContainer
+  max-width: 1280px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  margin-top: 5rem
+
+  @media screen and (max-width: 1280px) 
+    flex-direction: column
+    gap: 1.5rem
+    justify-content: center
+    align-items: center
+
+  
+.partnerContent
+  max-width: 1280px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  @media screen and (max-width: 1280px) 
+    flex-direction: column
+    align-items: center 
+    text-align: center 
+  
+.partnerBanner
+  position: relative
+  z-index: -1
+  object-fit: cover
+  width: calc(40rem - 2%)
+  height: calc(21.875rem - 2%)
+  border-radius: 20px
+
+  @media screen and (max-width: 800px) 
+    width: 400px
+
+  
+.partnerInfo
+  position: absolute
+  margin-top: 8rem
+  margin-left: 2.75rem
+
+  h6
+    font-family: $font-poppins
+    font-weight: 700
+    font-size: 2.5rem
+    color: $white
+
+  p
+    font-family: $font-poppins
+    font-weight: 400
+    font-size: 1rem
+    color: $white
+    margin-top: 0.5rem
+
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+
+    background: $yellow
+    cursor: pointer
+    height: 3rem
+    width: 9rem
+
+    font-family: $font-poppins
+    font-weight: 700
+    font-size: 1rem
+    color: $purple
+    letter-spacing: 2px
+
+    border-radius: 6px
+
+    margin-top: 2rem
+
+    &:hover
+      background-color: #FFF600
+
+  @media screen and (max-width: 1280px)
+    text-align: left
+    margin-left: -12rem
+    
+    @media screen and (max-width: 800px)
+      text-align: left
+      height: 40%
+      margin-top: 1.5rem
+      margin-left: -1rem
+    
