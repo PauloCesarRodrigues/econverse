@@ -1,4 +1,3 @@
-import '@/styles/globals.sass'
 import styles from '@/pages/home/style.module.sass'
 import Image from 'next/image'
 import bannerImg from '@/assets/home/bannerPrincipal.png'
